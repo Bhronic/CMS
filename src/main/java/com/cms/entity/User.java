@@ -1,5 +1,7 @@
 package com.cms.entity;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -7,15 +9,21 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.springframework.beans.factory.annotation.Value;
 @Entity
 @Table(name="user_data")
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	long id;
-	boolean active;
-	String firstName,lastName,email,password;
-	Date  data_created,last_login,updated_date;
+	boolean active = true;
+	String firstName,lastName,email,password,role;
+	Date  data_created=  new Date();
+	Date  last_login,updated_date;
+	
+	
+    
 	
 	public long getId() {
 		return id;
@@ -23,6 +31,7 @@ public class User {
 	public void setId(long id) {
 		this.id = id;
 	}
+	
 	public boolean isActive() {
 		return active;
 	}
@@ -30,7 +39,7 @@ public class User {
 		this.active = active;
 	}
 	public String getFirstName() {
-		return firstName;
+		return firstName ;
 	}
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -54,7 +63,7 @@ public class User {
 		this.password = password;
 	}
 	public Date getData_created() {
-		return data_created;
+		return data_created ;
 	}
 	public void setData_created(Date data_created) {
 		this.data_created = data_created;

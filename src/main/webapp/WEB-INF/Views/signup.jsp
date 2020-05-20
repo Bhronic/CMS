@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from slidesigma.com/themes/html/costic/pages/prebuilt-pages/default-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Feb 2020 13:14:06 GMT -->
 <head>
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -51,14 +48,14 @@
         </div>
         <div class="ms-auth-col">
           <div class="ms-auth-form">
-            <form class="needs-validation" novalidate="">
+            <form class="needs-validation"  action="/cms/save"  modelAttribute="user" method="GET">
               <h3>Create Account</h3>
               <p>Please enter personal information to continue</p>
               <div class="form-row">
                 <div class="col-md-6 ">
                   <label for="validationCustom01">First name</label>
                   <div class="input-group">
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="John" required="">
+                    <input type="text" class="form-control"  placeholder="First name"  name="firstName" required="">
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -67,7 +64,7 @@
                 <div class="col-md-6 ">
                   <label for="validationCustom02">Last name</label>
                   <div class="input-group">
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Doe" required="">
+                    <input type="text" class="form-control"  placeholder="lastName" name="lastName" required="">
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -78,7 +75,7 @@
                 <div class="col-md-12 ">
                   <label for="validationCustom03">Email Address</label>
                   <div class="input-group">
-                    <input type="email" class="form-control" id="validationCustom03" placeholder="Email Address" required="">
+                    <input type="text" class="form-control" placeholder="Email Address" name="email" required="">
                     <div class="invalid-feedback">
                       Please provide a valid email.
                     </div>
@@ -87,7 +84,7 @@
                 <div class="col-md-12 ">
                   <label for="validationCustom04">Password</label>
                   <div class="input-group">
-                    <input type="password" class="form-control" id="validationCustom04" placeholder="Password" required="">
+                    <input type="password" class="form-control"  placeholder="Password" name= "password" required="">
                     <div class="invalid-feedback">
                       Please provide a password.
                     </div>
@@ -97,7 +94,7 @@
               <div class="form-group">
                 <div class="form-check pl-0">
                   <label class="ms-checkbox-wrap">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+                    <input class="form-check-input" type="checkbox" value=""  required="">
                     <i class="ms-checkbox-check"></i>
                   </label>
                   <span> Agree to terms and conditions </span>
