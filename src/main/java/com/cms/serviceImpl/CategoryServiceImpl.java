@@ -27,4 +27,16 @@ public class CategoryServiceImpl implements CategoryService {
 		return categoryDao.getAllCategory();
 	}
 
+	@Override
+	public void deleteCategory(long id) {
+		// TODO Auto-generated method stub
+		categoryDao.deleteCategory(id);
+	}
+
+	@Override
+	public Category findCategoryById(long id) {
+		// TODO Auto-generated method stub
+		return categoryDao.findCategoryById(id);
+	}
+
 }

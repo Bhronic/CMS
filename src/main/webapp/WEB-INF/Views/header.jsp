@@ -25,6 +25,7 @@
   <link href="../assets/css/style.css" rel="stylesheet">
   <!-- Favicon -->
   <link rel="icon" type="../image/png" sizes="32x32" href="favicon.ico">
+ 
 </head>
 <body>
  <!-- Preloader -->
@@ -73,15 +74,15 @@
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#product" aria-expanded="false" aria-controls="product"> <span><i class="fa fa-archive fs-16"></i>Menus </span>
         </a>
         <ul id="product" class="collapse" aria-labelledby="product" data-parent="#side-nav-accordion">
-          <li> <a href="pages/product/productcata.html">Menu Catalogue</a>
-          </li>
-          <li> <a href="pages/product/productlist.html">Menu List</a>
+         <!--  <li> <a href="pages/product/productcata.html">Menu Catalogue</a>
+          </li> -->
+         <!--  <li> <a href="pages/product/productlist.html">Menu List</a>
           </li>
           <li> <a href="pages/product/productgrid.html">Menu Grid</a>
-          </li>
+          </li> -->
           <li> <a href="category">Add Category</a>
           </li>
-          <li> <a href="pages/product/addproduct.html">Add Product</a>
+          <li> <a href="item">Add Item</a>
           </li>
           <li> <a href="pages/product/productdetail.html">Product Detail</a>
           </li>
